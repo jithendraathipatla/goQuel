@@ -8,16 +8,158 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
 .body
 {
   background-image: url("");
-  background-color: black;
+  background-color: yellow;
   color: white;
 }
   </style>
+  <script type="text/javascript">
+        $(document).ready(function() {
+            $("#sign").click(function(){
+                $(".card").show();
+                
+                $("#sign").hide();
+                $(".card1").hide();
+                $(".signin").hide();
+                 $("#sign").show();
+               $("st").show();
+
+            });
+        });
+
+        $(document).ready(function() {
+            $("#st").click(function(){
+               
+                $(".card1").show();
+                $("#signin").show();
+               $(".card").hide();
+               $("#sign").show();
+               $("st").show();
+
+            });
+        });
+        
+
+            </script>
+
+
+
+
+
+
+           
+<style type="text/css">
+.body1{
+    background-color: lightgrey;
+    width: 98%;
+    border: 15px solid green;
+    padding: 10px;
+    margin: 15px;
+}
+
+body{
+    background-color: lightgrey;
+}
+.navbar {
+ margin-bottom: 0;
+ border-radius: 0;
+ background-color: white;
+ color:#FFF;
+ padding:1% 0;
+ font-size: 1.2em;
+ border: 0;
+  }
+
+h1{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+    border: 6PX dashed #9966cc; 
+    margin-right: 10px;
+
+}
+    form li{
+        text-decoration: none;
+        list-style: none;
+        margin-top: 50px;
+
+    }
+    .card{
+        
+    }
+    .card1{
+     display: none;
+    }
+    form{
+        margin-top: -30px;
+    }
+    form ul li label{
+        float: left;
+        clear: left;
+        width: 100px;
+        text-align:right;
+        margin-right: 10px;
+        font-family: Verdana, Arial, Helvetica,sans-serif;
+        font-size:14px;
+    }
+    form ul li input,select, span{
+        float: left;
+        margin-bottom: 10px;
+    }
+    form textarea{
+        float:left;
+        width: 350px;
+        height:px;
+
+    }
+    [type="submit"]{
+        clear:left;
+        margin: 20px 0px 0px 140px;
+        font-size:18px;
+        width:300px;
+        height: 40px;
+        border-radius: 5px
+    }
+    [type="submit"]:hover{
+        background-color: #5d8aa8;
+
+    }
+    [type="submit"]:focus{
+        background-color: #a4c639;
+    }
+    li input[type=text]{
+        width: 400px;
+        height: 20px;
+        padding:4px;
+        border:2px solid ;
+        border-radius: 2px;
+
+    }
+    li input[type=text]:hover:focus{
+        border:3px solid green;
+    }
+    select{
+        width: 410px;
+        height: 30px;
+        border:2px solid;
+        border-radius: 2px;
+
+    }
+    p{
+        margin-left:70px;
+        font-weight: bold;
+    }
+</style>
 </head>
 <body>
+
+
 <nav class="navbar navbar-inverse">
   <div class="col-md-12" style="background-color: white">
     <div class="navbar-header">
@@ -29,6 +171,7 @@
       <a class="navbar-brand" href="#"><img src="https://dvqsijdqua881.cloudfront.net/images/newLogo.png"
                                                                      class="img-responsive"></a>
     </div>
+
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="#">Features</a></li>
@@ -52,6 +195,7 @@
 
 <!--Banner-->
     <section id="banner-text">
+<div class="body1">
         <div class="container">
             <div class="row">
 
@@ -59,379 +203,34 @@
                     <div class="inner">
                         <h4 class="" style="color:black"><i>"Money Matters Simplified"</i></h4>
                         <br>
-                        <h1 class="" style="color:black">Your only Inclusive Fee Payment and Management Solution</h1>
+                        <h2 class="" style="color:black">Your only Inclusive Fee Payment and Management Solution</h2>
                         <br>
                         <h3 class="" style="color:black">Pay fees anytime, anywhere, anyhow from the comfort of your home
                         </h3>
 
                     </div>
                 </div>
-
-                <div id="feeTypePaymentDiv" style="display: block;" class="col-md-6  text-left  banner-p-text2">
-                    <div class="inner ">
-                        <div class="banner-form">
-
-                            
-                            <div><p style="color:#FF6347;font-weight: bold;">Please select a valid school.,Please select a valid school.</p></div>
-                            
-
-                            <form action="/" method="post">
-                              <div class="form-group" style="margin-top: 30px;">
-
-<a style="width: 200px; text-align: center; background-color: #E6E6E6; color: black" id="feesPaymentButton"
-                                       class="btn-style-one jumper" href="#menu1"> Fee Payment</a>
-                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-   <a style=" width: 200px; text-align: center;" id="otherPaymentButton"
-                                       class="btn-style-one jumper" href="#menu2"> Other Payment
-                                    </a>
-                                </div>
-                                <div class="form-group in active" id="menu1">
-                                    <div class="control-group">
-                                        <label class=" text-white sc-wd">Enter Institution Name</label>
-
-                                        <!--<select name="organisationId" class="form-control">-->
-                                        <!---->
-                                        <!--<option value="58d2398c7ba4f12ea609e8e7"> St. Michael&#39;s Academy</option>-->
-                                        <!---->
-                                        <!--<option value="58f754fd114596555b62e24e"> Jay Mata Dee (FDTN-BXR-Transport)</option>-->
-                                        <!---->
-                                        <!--<option value="594bae06c2b0f90011aa7252"> AT-Taqwa International School</option>-->
-                                        <!---->
-                                        <!--<option value="5899cd47aec24c3eac44de83"> East &amp; West High School</option>-->
-                                        <!---->
-                                        <!--<option value="59366cfaaa87973559588c2f"> New Jay Mata Dee (MBIS-PTN-Transport)</option>-->
-                                        <!---->
-                                        <!--<option value="58ecd2faa49cd853db954623"> Tender Hearts Rajendra Nagar</option>-->
-                                        <!---->
-                                        <!--<option value="59081f2f7bc370148ca52918"> New Jay Mata Dee (FDTN-KGL-Transport)</option>-->
-                                        <!---->
-                                        <!--<option value="59314298fb7ab8457aaeb3a1"> MJ Mayank Jain Classes(An initiative of CA MAYANK JAIN)</option>-->
-                                        <!---->
-                                        <!--<option value="592802ec20488000101c91e3"> New Jay Mata Dee (FDTN-BXR-Transport)</option>-->
-                                        <!---->
-                                        <!--<option value="5948083b634eed0011b94f8f"> Christ International School</option>-->
-                                        <!---->
-                                        <!--<option value="586c9250291db500117cb4cb"> VKD International School</option>-->
-                                        <!---->
-                                        <!--<option value="59818a2ecf2a5a267dc34c91"> Dr. D Y Patil Pushapalata Patil International School</option>-->
-                                        <!---->
-                                        <!--<option value="599416eb1570fb54e3fbdf6b"> IIM - Nulearn</option>-->
-                                        <!---->
-                                        <!--<option value="59c341816cd2ec002b9529f0"> Noble Education Public School</option>-->
-                                        <!---->
-                                        <!--<option value="597c378a5325b3110a176d67"> Medhaam Pre-School</option>-->
-                                        <!---->
-                                        <!--<option value="5989aff919b954553be1ee3c"> BD International School</option>-->
-                                        <!---->
-                                        <!--<option value="59ac23ffafa3140023f14389"> Mere Nanhe Kadam</option>-->
-                                        <!---->
-                                        <!--<option value="595a2bce59488d0011536516"> Plutus Study Material</option>-->
-                                        <!---->
-                                        <!--<option value="59d1aa28470eb7001e22732c"> Sankhyiki Lajpat Nagar Centre</option>-->
-                                        <!---->
-                                        <!--<option value="59d1a9ed2f9412002b690a6f"> Sankhyiki Rajouri Garden Centre</option>-->
-                                        <!---->
-                                        <!--<option value="59d1a9b813db1c003878429b"> Sankhyiki Satya Niketan Centre</option>-->
-                                        <!---->
-                                        <!--<option value="59ccc2197303ef001e43ca7d"> Sankhyiki North Campus Centre</option>-->
-                                        <!---->
-                                        <!--<option value="59ccc40dd7fc370018862a0b"> Sankhyiki Jaipur Centre</option>-->
-                                        <!---->
-                                        <!--<option value="59ccc4bc43b042001f255645"> Sankhyiki Chandigarh Centre</option>-->
-                                        <!---->
-                                        <!--<option value="59c35ef4ff0c32008a62acb7"> Sree Veerandra Patil</option>-->
-                                        <!---->
-                                        <!--<option value="59e48a498b2baf51540aef3a"> Dar Al Arqam Public School Ranchi</option>-->
-                                        <!---->
-                                        <!--<option value="59f800de1cb92e57c3f31b99"> Science Classes</option>-->
-                                        <!---->
-                                        <!--<option value="59f80a6b1cb92e57c3f31bb4"> K G N Services</option>-->
-                                        <!---->
-                                        <!--<option value="59f80b7e56d00857c9e32e79"> Hostel DDYPPPIS</option>-->
-                                        <!---->
-                                        <!--<option value="59f80d0c56d00857c9e32e80"> SHRI VINAYAK ACADEMY INTERNATIONAL SCHOOL</option>-->
-                                        <!---->
-                                        <!--<option value="59f80d6d1cb92e57c3f31bbb"> Birla Institute of Technology</option>-->
-                                        <!---->
-                                        <!--<option value="59f80dc71cb92e57c3f31bbd"> Savvy IIT Academy</option>-->
-                                        <!---->
-                                        <!--<option value="59f88a215a2b52098ed1bb42"> Toastmasters International Club</option>-->
-                                        <!---->
-                                        <!--<option value="5a0966a62554ad3afc21ea09"> Trident B.Ed. College</option>-->
-                                        <!---->
-                                        <!--<option value="5a18f768611f8706e591dc0e"> St. Michael&#39;s Prep School</option>-->
-                                        <!---->
-                                        <!--<option value="5a1fed21c3407f2fad41a819"> BIS Model School</option>-->
-                                        <!---->
-                                        <!--<option value="5a22432c71dd22409261ddf2"> Foundation School Buxar</option>-->
-                                        <!---->
-                                        <!--<option value="5a26456b1cda4a5324501798"> Master Dashboard DDYPPPIS</option>-->
-                                        <!---->
-                                        <!--<option value="5a2a43a8a29d41676736efeb"> G D Mishra Institute of Higher Studies</option>-->
-                                        <!---->
-                                        <!--<option value="5a2a442a907d6f675d76099c"> Foundation School Patna</option>-->
-                                        <!---->
-                                        <!--<option value="5a2a44c8907d6f675d76099e"> Manava Bharati International School</option>-->
-                                        <!---->
-                                        <!--<option value="5a2a4549907d6f675d7609ad"> LORD BUDDHA EDUCATIONAL FOUNDATION SOCIETY</option>-->
-                                        <!---->
-                                        <!--<option value="5a2f86a8907d6f675d76171f"> Millennium World School</option>-->
-                                        <!---->
-                                        <!--<option value="5a300da2907d6f675d7618d7"> Aryabhatta Niketan</option>-->
-                                        <!---->
-                                        <!--<option value="5a39dc0791b47670adebfc76"> Christ College - Alambady</option>-->
-                                        <!---->
-                                        <!--<option value="5a3bba8091b47670adec06e5"> Twinkle United Public School</option>-->
-                                        <!---->
-                                        <!--<option value="5a4b48fb212178194df74ad4"> Mother&#39;s International Academy Girls</option>-->
-                                        <!---->
-                                        <!--<option value="5a4c9e5d52ca9d1947abf466"> Gurukul Shiksha Niketan</option>-->
-                                        <!---->
-                                        <!--<option value="5a4cbaaf212178194df75606"> Mother&#39;s International Academy Boys</option>-->
-                                        <!---->
-                                        <!--<option value="5a4cbaf652ca9d1947abf584"> Mother&#39;s B.ED. Teacher Training Academy</option>-->
-                                        <!---->
-                                        <!--<option value="5a571b0e27d1e5571f3d4292"> IICA - Nulearn</option>-->
-                                        <!---->
-                                        <!--<option value="5a5dab89f231820537d80dff"> D Y Patil Kids World</option>-->
-                                        <!---->
-                                        <!--<option value="5a696299405446762bea4726"> St Francis School- Bagalur</option>-->
-                                        <!---->
-                                        <!--<option value="5a702efa374ebf2ab1806de1"> Junior DPS Patel Nagar</option>-->
-                                        <!---->
-                                        <!--<option value="5a703025374ebf2ab1806de3"> Junior DPS Pundag</option>-->
-                                        <!---->
-                                        <!--<option value="5a820c80d15816566698b8ec"> Chanakya College of Education</option>-->
-                                        <!---->
-                                        <!--<option value="5a820cddd15816566698b8ee"> CCoE</option>-->
-                                        <!---->
-                                        <!--<option value="5a891cd2beaf1c21ea67c8e7"> Junior DPS Janakpuri</option>-->
-                                        <!---->
-                                        <!--<option value="5a8e46b2b9655a078e79baf1"> Junior DPS Rajiv Nagar</option>-->
-                                        <!---->
-                                        <!--<option value="5a8fa0d5b9655a078e79c203"> Fresher House</option>-->
-                                        <!---->
-                                        <!--<option value="5a91ad085ccfbb07880b1a1c"> INS International School</option>-->
-                                        <!---->
-                                        <!--<option value="5a93b3bf5ccfbb07880b1eb7"> RK GOWTHAM TECHNO SCHOOL AND P U COLLEGE</option>-->
-                                        <!---->
-                                        <!--<option value="5a9e86ecfdcd266fa1b089fa"> Master Dashboard Junior DPS (Bihar &amp; Jharkhand)</option>-->
-                                        <!---->
-                                        <!--<option value="5aa0f8a86a8ab31b72d5f466"> Euro Kids Sushant Lok-III</option>-->
-                                        <!---->
-                                        <!--<option value="5aa3b04a6a8ab31b72d6014e"> Junior DPS Gola Road</option>-->
-                                        <!---->
-                                        <!--<option value="5aabeb472ba9651d6f370955"> Ramjas College University of Delhi(DU)</option>-->
-                                        <!---->
-                                        <!--<option value="5aae7f6020eb6f2d7e5889d4"> alphabyte - The Learning Terminal - Sohna Road</option>-->
-                                        <!---->
-                                        <!--<option value="5ab24c3bbfb2025ea10507c2"> alphabyte- The Learning Terminal - Sector 56</option>-->
-                                        <!---->
-                                        <!--<option value="5ab24d74e836b25ea7d03ee2"> alphabyte- The Learning Terminal - Raheja Atlantis</option>-->
-                                        <!---->
-                                        <!--<option value="5ab24e44bfb2025ea10507eb"> alphabyte- The Learning Terminal - Palam Vihar</option>-->
-                                        <!---->
-                                        <!--<option value="5ab71027021f5b7ca3fd1bdc"> Rotaract District 3012</option>-->
-                                        <!---->
-                                        <!--<option value="5abb1b7c68083d1fabf17626"> Sir M. Vishveshwaraiah Vidyaniketan</option>-->
-                                        <!---->
-                                        <!--<option value="5abc71e7439ffa2ac42d52ff"> Holy Cross School Anisabad</option>-->
-                                        <!---->
-                                        <!--<option value="5ac72f44e8191838ab1a09f3"> BISHOP SARGENT HIGH SCHOOL- K.Narayanpura</option>-->
-                                        <!---->
-                                        <!--<option value="5ac73171e718b938a5ee34c7"> BISHOP SARGENT SCHOOL- BAGALURU</option>-->
-                                        <!---->
-                                        <!--<option value="5ac73ae9e718b938a5ee355a"> alphabyte</option>-->
-                                        <!---->
-                                        <!--<option value="5acc59ce60992b4116535e69"> alphabyte- The Learning Terminal - Main Madanpuri Road</option>-->
-                                        <!---->
-                                        <!--<option value="5ad57a678cd15b0a50b12218"> KnoWerX Education India</option>-->
-                                        <!---->
-                                        <!--<option value="5ae0003e9e233f3463d36d69"> Aarsha Public School</option>-->
-                                        <!---->
-                                        <!--<option value="5ae0004a9e233f3463d36d6b"> BSS Public School</option>-->
-                                        <!---->
-                                        <!--<option value="5ae1ea5a5bee2860d8061d4e"> SADHANA VIDYA KENDRA</option>-->
-                                        <!---->
-                                        <!--<option value="5ae7f795219d031f100c605f"> THE CHILDREN MAGAZINE</option>-->
-                                        <!---->
-                                        <!--<option value="5ae9c1efe598d75ada5b05f0"> Kunigal Valley International Residential School</option>-->
-                                        <!---->
-                                        <!--<option value="5ae9c2d4e598d75ada5b05f3"> Vijaya P.U Residential College</option>-->
-                                        <!---->
-                                        <!--<option value="5ae9c727127a505ad424d621"> Brilliant&#39;s Valley International Residential School</option>-->
-                                        <!---->
-                                        <!--<option value="5ae9cb0ce598d75ada5b05f5"> Brilliant&#39;s Valley Public School</option>-->
-                                        <!---->
-                                        <!--<option value="5ae9fdc1e598d75ada5b060b"> SPJ Public Institute</option>-->
-                                        <!---->
-                                        <!--<option value="5aebdfabe598d75ada5b214e"> IQRA International School Ranchi</option>-->
-                                        <!---->
-                                        <!--<option value="5aebe50a127a505ad424f5e0"> IQRA International School Jamshedpur</option>-->
-                                        <!---->
-                                        <!--<option value="5af020db2ffcac3895b2005d"> Dar AlArqam Public School</option>-->
-                                        <!---->
-                                        <!--<option value="5af0216c2ffcac3895b20060"> Park Mount School</option>-->
-                                        <!---->
-                                        <!--<option value="5af6b7acf3f7c9328f3379f4"> alphabyte - The Learning Terminal - Ghaziabad</option>-->
-                                        <!---->
-                                        <!--<option value="5af92742f3f7c9328f338021"> Kunigal valley master dashboard</option>-->
-                                        <!---->
-                                        <!--<option value="5afbffb907307214265a8e5e"> Alphabyte - The Learning Terminal - Uppal South End</option>-->
-                                        <!---->
-                                        <!--<option value="5afd4399a04a9e33c526ffeb"> Alphabyte - The Learning Terminal - NTT</option>-->
-                                        <!---->
-                                        <!--<option value="5afe7cf086c45c3a5d8eaf4b"> The Vivekananda School</option>-->
-                                        <!---->
-                                        <!--<option value="5b068bc776499e2b3cb714a8"> St Lawrence School</option>-->
-                                        <!---->
-                                        <!--<option value="5b07b629b2c2c035606640e2"> St Lawrence Academy</option>-->
-                                        <!---->
-                                        <!--<option value="5b07ba2a7ae95235c7c8f019"> St Lawrence Technical Institute</option>-->
-                                        <!---->
-                                        <!--<option value="5b07bab67ae95235c7c8f027"> Sandhya Industrial Training Centre</option>-->
-                                        <!---->
-                                        <!--<option value="5b1252fcacdb317fc0b9dbbe"> alphabyte - The learning Terminal - Sector 51 Noida</option>-->
-                                        <!---->
-                                        <!--<option value="5b177616477a737fb6eb0a23"> I&#39;S Commerce Classes Park Street</option>-->
-                                        <!---->
-                                        <!--<option value="5b1b9fb9bd72515629f40976"> HanYou Chinese Language Institute</option>-->
-                                        <!---->
-                                        <!--<option value="5b20e3c77284cd139e610990"> Aurora Public School</option>-->
-                                        <!---->
-                                        <!--<option value="5b20e4307284cd139e610994"> D Flower Play School</option>-->
-                                        <!---->
-                                        <!--<option value="5b237d57bd72515629f41e87"> International School Of Management (ISM-UG)</option>-->
-                                        <!---->
-                                        <!--<option value="5b237ea87284cd139e611074"> Mundeshwari College For Teacher Education</option>-->
-                                        <!---->
-                                        <!--<option value="5b237f747284cd139e611076"> International School Of Management (ISM-PG)</option>-->
-                                        <!---->
-                                        <!--<option value="5b30c0c2fe5b6e0598e73858"> CA PS Beniwal Classes</option>-->
-                                        <!---->
-                                        <!--<option value="5b4236f90adb411d35ef8f6b"> Sunbeam Central School</option>-->
-                                        <!---->
-                                        <!--<option value="5b4591250adb411d35efbe9e"> Sunbeam Central School HOSTEL</option>-->
-                                        <!---->
-                                        <!--<option value="5b46ec90be864169896332e6"> qles Admin Account</option>-->
-                                        <!---->
-                                        <!--<option value="5b485db8bd961c4b7b0bab52"> KidZEE Hilsa</option>-->
-                                        <!---->
-                                        <!--<option value="5b4db4f8e670f867f6c9c15c"> Beekay Public School</option>-->
-                                        <!---->
-                                        <!--<option value="5b4eb8b174906367f0ebe00a"> alphabyte - The Learning Terminal - Sector 4 Vaishali</option>-->
-                                        <!---->
-                                        <!--</select>-->
+               
 
 
-                                        <!--<input id="schools" class="form-control w-d">-->
-                                        <!--<input id="schoola" class="form-control" name="organisationId" type="hidden"-->
-                                        <!--value=""/>-->
-
-                                        <input type="text" id="autocomplete" class="form-control w-d"
-                                               placeholder="Enter Institution Name"/>
-                                        <input id="schoola" class="form-control" name="organisationId" type="hidden"
-                                               value=""/>
-
-                                             </div>
-                                           </div>
-
-                                           <div class="form-group">
-                                    <label class=" text-white">Enter Admission ID</label>
-                                    <!--<input type="text" class="form-control" required="" name="">-->
-                                    <input type="text" name="admId" class="form-control" required="" id="admissionId"
-                                           placeholder="Enter Admission ID"/>
+<div>
+        
+        <button id="sign">Signup</button>
+        <button id="st">signin</button>
+    
+    <br>
 
 
-                                </div>
-
-                                <div class="form-group  row make-div">
-                                    <button type="submit"
-                                            class="btn btn-orange  col-md-3 col-sm-12 col-xs-12 wd50 center-block pull-right">
-                                        Pay Fees
-                                    </button>
-
-                                    <span class="click-txt text-white pl10  text-underline col-md-7 col-sm-12 col-xs-12"><a
-                                                href="#"
-                                                class="click-txt text-white _500"
-                                                data-toggle="modal"
-                                                data-target="#newSchoolModal">Couldn’t
-         find your institute? Click here</a>
-</span>
-
-
-                                </div>
-
-                                <!--<input type="submit" value="Get"/>-->
-
-                            </form>
-
-                        </div>
-
-                    </div>
-                    <div class="clearfix"></div>
-
-
-                </div>
-                <div id="blackMoneyTypePaymentDiv" style="display:none" class="col-md-6  text-left  banner-p-text2">
-                    <div class="inner ">
-                       <div class="control-group" id="menu2">
-
-                        
-                            <div class="form-group">
-                                <div class="control-group">
-
-
-
-                            </div>
-                                
-
-                                    <input type="text" id="autocomplete2" class="form-control w-d"
-                                           placeholder="Enter Institution Name"/>
-                                    <input id="schoola2" class="form-control" type="hidden"
-                                           value=""/>
-                                    <div class="control-group">
-                                    <label class=" text-white">Enter Admission ID</label>
-                                    <!--<input type="text" class="form-control" required="" name="">-->
-                                    <input type="text" name="admId" class="form-control" required="" id="admissionId"
-                                           placeholder="Enter Admission ID"/>
-</div>
-
-                                </div>
-
-                                <div class="form-group  row make-div">
-                                    <button type="submit"
-                                            class="btn btn-orange  col-md-3 col-sm-12 col-xs-12 wd50 center-block pull-right">
-                                        Pay Fees
-                                    </button>
-
-                                    <span class="click-txt text-white pl10  text-underline col-md-7 col-sm-12 col-xs-12"><a
-                                                href="#"
-                                                class="click-txt text-white _500"
-                                                data-toggle="modal"
-                                                data-target="#newSchoolModal">Couldn’t
-         find your institute? Click here</a>
-</span>
-
-
-                                </div>
-
-                                <!--<input type="submit" value="Get"/>-->
-
-                            </form>
-
-                        </div>
-
-                    </div>
-                    <div class="clearfix"></div>
-
-
-                </div>
-
-                
-                            <div class="form-group">
+<div class="row">
+<div class="col-xs-3 col-md-5" style="background-color:lavender;"> 
+  <div class="card">
+        
+            <legend>Fee payment</legend>
+            <br>
+            
+            <br>
+<form name='registration' onsubmit="return formValidation();">
+   <div class="form-group">
                                 <div class="control-group">
 
 
@@ -475,10 +274,68 @@
                             <div class="form-group  row make-div">
                             <span class=" text-white sc-wd" style="display:none" id="formError">Please fill all fields correctly.</span>
                                 <button id="paymentOfBlackMoney" type="submit"
-                                        class="btn btn-orange  col-md-3 col-sm-12 col-xs-12 wd50 wd47 center-block pull-right">
+                                        class="center">
                                     Make Payment
                                 </button>
                             </div>
+
+                        </div>
+</form>
+
+
+ 
+
+<div class="card1">
+
+        
+            <legend style="text-align: center">Fee Payment</legend>
+            <br>
+            
+<form name='registration' onsubmit="return formValidation();">
+                     <div class="form-group">
+                                <div class="control-group">
+
+
+
+                            </div>
+                            <label>Enter Institute Name</label>
+                                
+
+                                    <input type="text" id="autocomplete2" class="form-control w-d"
+                                           placeholder="Enter Institution Name"/>
+                                    <input id="schoola2" class="form-control" type="hidden"
+                                           value=""/>
+                                           <br>
+                                    <div class="control-group">
+                                    <label class=" text-white">Enter Admission ID</label>
+                                    <!--<input type="text" class="form-control" required="" name="">-->
+                                    <input type="text" name="admId" class="form-control" required="" id="admissionId"
+                                           placeholder="Enter Admission ID"/>
+</div>
+
+                                </div>
+
+                                <div class="form-group  row make-div">
+                                    <button type="submit"
+                                            class="center">
+                                        Pay Fees
+                                    </button>
+<br>
+<br>
+                                    <span class="click-txt text-white pl10  text-underline col-md-7 col-sm-12 col-xs-12"><a
+                                                href="#"
+                                                class="click-txt text-white _500"
+                                                data-toggle="modal"
+                                                data-target="#newSchoolModal">Couldn’t
+         find your institute? Click here</a>
+</span>
+
+
+                                </div>
+
+                                <!--<input type="submit" value="Get"/>-->
+
+                            </form>
 
                         </div>
 
@@ -488,7 +345,16 @@
 
                 </div>
 
+</form>
+</fieldset>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-            </div>
+        
+        
+
 </body>
 </html>
